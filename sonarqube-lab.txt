@@ -1,0 +1,21 @@
+1. Download SonarQube and SonarScanner
+2. Installing Oracle Java 17 version (on cmd check java -version)
+3. Unzip the SonarQube file
+4. Go To Environment variables and add Sonarqube/bin to path
+5. Open command terminal and go to the bin directory of SonarQube.
+6. run StartSonar.bat
+7. open a browser and got to localhost:9000 admin:admin, update password
+8. click on project link
+9. select manual option
+10. Enter Project Display Name "PythonSonarLab" and click set up button
+11. select locally option
+12. click generate button save the key on a notepad.
+13. click on the continue button
+14. Unzip the sonarscanner file
+15. Download the PythonProgram folder from teams and place them in the     same folder where SonarQube folder are.
+16. open a new command terminal and got to sonarscanner bin folder.
+17. run the following command
+sonar-scanner.bat -D"sonar.projectKey=PythonSonarLab" -D"sonar.sources=D:/chetan/Academics/July-Nov_2023_AdvDevops/practice-llabs/sonarqube-lab/PythonPrograms" -D"sonar.host.url=http://localhost:9000"
+     -D"sonar.login=sqp_ef3cc7ca75753bbdb5dc971976d8993a315a560e"
+     -D"sonar.projectBaseDir=D:/chetan/Academics/July-Nov_2023_AdvDevops/practice-llabs/sonarqube-lab/PythonPrograms"
+18. check the results of the analysis in localhost on browser.
