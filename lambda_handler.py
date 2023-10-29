@@ -29,3 +29,5 @@ if __name__ == "__main__":
     test_event = {"user": "local_pixegami"}
     result = lambda_handler(test_event, None)
     print(result)
+
+# https://www.youtube.com/watch?v=CjVPMocEECM
